@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "392869692301",
+    "project_id": "the-goal-ada4e",
+    "storage_bucket": "the-goal-ada4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392869692301:android:c5b45e85423df57c8df3c4",
+        "android_client_info": {
+          "package_name": "kz.main.thegoal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392869692301-b5nhclet6q2t4uje3alaaepbo087js8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR3DgUmYmyinjCAn5g_K6DXooLUSeVle0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392869692301-b5nhclet6q2t4uje3alaaepbo087js8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
