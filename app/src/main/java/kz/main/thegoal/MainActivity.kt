@@ -1,6 +1,5 @@
 package kz.main.thegoal
 
-import android.content.Context
 import android.content.IntentFilter
 import android.os.Build
 import android.os.Bundle
@@ -37,8 +36,6 @@ class MainActivity : AppCompatActivity() {
 
         navView.setupWithNavController(navController)
 
-        setPreferences()
-
         IntentFilter(LANGUAGE_CHANGED).apply {
             registerReceiver(receiver, this, RECEIVER_NOT_EXPORTED)
         }
@@ -47,14 +44,5 @@ class MainActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         unregisterReceiver(receiver)
-    }
-
-    private fun setPreferences() {
-        val sharedPref = getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE)
-        if (sharedPref.getString(SHARED_PREF_KEY, "").isNullOrBlank()) {
-            sharedPref.edit().apply {
-                putString(SHARED_PREF_KEY, SHARED_PREF_DEFAULT_LANG)
-            }.apply()
-        }
     }
 }
