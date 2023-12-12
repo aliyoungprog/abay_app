@@ -4,7 +4,5 @@ import kz.main.thegoal.domain.entity.Word
 
 class ShareWordUseCase {
 
-    suspend fun invoke(word: Word) {
-
-    }
+    suspend fun invoke(word: Word) {}
 }
