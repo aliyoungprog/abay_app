@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        val navView: BottomNavigationView = binding.bottomNavView
+        val navView = binding.bottomNavView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 

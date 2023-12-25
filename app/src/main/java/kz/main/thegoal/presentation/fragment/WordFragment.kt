@@ -67,9 +67,9 @@ class WordFragment : Fragment() {
             wordVM.removeFromFavorite(args.word)
         }
 
-        binding.wordComponent?.shareImg?.setOnClickListener {
-            sendLink()
-        }
+//        binding.wordComponent?.shareImg?.setOnClickListener {
+//            sendLink()
+//        }
     }
 
     private fun setUpSrc(isSaved: Boolean) {

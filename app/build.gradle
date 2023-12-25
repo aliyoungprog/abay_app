@@ -53,6 +53,7 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+    namespace 'kz.main.thegoal'
 }
 
 dependencies {
@@ -88,20 +89,14 @@ dependencies {
     kapt "androidx.room:room-compiler:$room_version"
 
     implementation 'com.google.code.gson:gson:2.10.1'
-    testImplementation("org.mockito:mockito-core:4.5.1")
 
     implementation 'com.google.firebase:firebase-storage-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
-
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
 
     implementation "io.insert-koin:koin-android:3.4.0"
-    implementation "androidx.viewpager2:viewpager2:1.0.0"
 
-    implementation "com.github.terrakok:cicerone:7.1"
 
     implementation "androidx.compose.animation:animation:$compose_version"
     implementation "androidx.compose.foundation:foundation:$compose_version"
@@ -114,4 +109,8 @@ dependencies {
     implementation "androidx.compose.runtime:runtime:$compose_version"
     implementation "androidx.compose.compiler:compiler:$compose_version"
 
+    implementation 'com.appsflyer:af-android-sdk:6.12.4'
+    implementation "com.android.installreferrer:installreferrer:2.2"
+
+    implementation("io.reactivex.rxjava3:rxjava:3.1.8")
 }
